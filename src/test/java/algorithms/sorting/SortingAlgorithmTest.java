@@ -18,6 +18,7 @@ public class SortingAlgorithmTest {
     private SortingAlgorithm bubbleSort = new BubbleSort();
     private SortingAlgorithm selectionSort = new SelectionSort();
     private SortingAlgorithm insertionSort = new InsertionSort();
+    private SortingAlgorithm mergeSort = new MergeSort();
 
     @Before
     public void initialize() {
@@ -47,6 +48,15 @@ public class SortingAlgorithmTest {
     public void insertionSort() {
         insertionSort.sort(numbersOne);
         insertionSort.sort(numbersTwo);
+
+        assertNumbersOneIsSorted(numbersOne);
+        assertNumbersTwoIsSorted(numbersTwo);
+    }
+
+    @Test
+    public void mergeSort() {
+        mergeSort.sort(numbersOne);
+        mergeSort.sort(numbersTwo);
 
         assertNumbersOneIsSorted(numbersOne);
         assertNumbersTwoIsSorted(numbersTwo);

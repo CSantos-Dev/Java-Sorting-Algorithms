@@ -3,7 +3,8 @@ package algorithms.sorting;
 /**
  * Implementation of Selection Sort algorithm.
  *
- *
+ * This algorithm steps through the array, finding the smallest value (In case of ASC sorting)
+ * and swapping his position with the value in the first place.
  *
  * @author csantos
  */

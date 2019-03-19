@@ -1,5 +1,5 @@
 # Java-Sorting-Algorithms
-Implementation of most common sorting algorithms in Java:
+The purpose of this repository is to show how the different sorting algorithms can be implemented using Java language.
 
 - Bubble Sort
 - Insertion Sort

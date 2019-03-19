@@ -16,6 +16,7 @@ public class SortingAlgorithmTest {
     private int[] numbersTwo;
 
     private SortingAlgorithm bubbleSort = new BubbleSort();
+    private SortingAlgorithm selectionSort = new SelectionSort();
     private SortingAlgorithm insertionSort = new InsertionSort();
 
     @Before
@@ -28,6 +29,15 @@ public class SortingAlgorithmTest {
     public void bubbleSort() {
         bubbleSort.sort(numbersOne);
         bubbleSort.sort(numbersTwo);
+
+        assertNumbersOneIsSorted(numbersOne);
+        assertNumbersTwoIsSorted(numbersTwo);
+    }
+
+    @Test
+    public void selectionSort() {
+        selectionSort.sort(numbersOne);
+        selectionSort.sort(numbersTwo);
 
         assertNumbersOneIsSorted(numbersOne);
         assertNumbersTwoIsSorted(numbersTwo);

@@ -20,6 +20,7 @@ public class SortingAlgorithmTest {
     private SortingAlgorithm insertionSort = new InsertionSort();
     private SortingAlgorithm mergeSort = new MergeSort();
     private SortingAlgorithm quickSort = new QuickSort();
+    private SortingAlgorithm heapSort = new HeapSort();
 
     @Before
     public void initialize() {
@@ -67,6 +68,15 @@ public class SortingAlgorithmTest {
     public void quickSort() {
         quickSort.sort(numbersOne);
         quickSort.sort(numbersTwo);
+
+        assertNumbersOneIsSorted(numbersOne);
+        assertNumbersTwoIsSorted(numbersTwo);
+    }
+
+    @Test
+    public void heapSort() {
+        heapSort.sort(numbersOne);
+        heapSort.sort(numbersTwo);
 
         assertNumbersOneIsSorted(numbersOne);
         assertNumbersTwoIsSorted(numbersTwo);

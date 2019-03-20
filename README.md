@@ -4,5 +4,6 @@ The purpose of this repository is to show how the most common sorting algorithms
 - Bubble Sort
 - Selection Sort
 - Insertion Sort
+- Heap Sort
 - Merge Sort
 - Quick Sort
